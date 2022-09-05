@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Home" android:background="#fff">
+    <TextView
+        android:id="@+id/bmitxt"
+        android:layout_width="match_parent"
+        android:layout_height="61dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="0dp"
+        android:background="@drawable/txt"
+        android:text="   All Calculator"
+        android:textAlignment="center"
+        android:textColor="	#FFFAFA"
+        android:textSize="30dp"
+        android:textStyle="bold" />
+
+    <RelativeLayout
+        android:id="@+id/rela1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="120dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/style1">
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                >
+
+                <ImageView
+                    android:id="@+id/f"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="55dp"
+                    android:background="@drawable/fitness" />
+
+                <Spinner
+                    android:id="@+id/spinner7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="60dp"
+                    android:dropDownVerticalOffset="50dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginTop="60dp"
+                    android:layout_marginEnd="21dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_toRightOf="@+id/f"
+                    android:background="@drawable/txtbtn"
+                    />
+
+                <ImageView
+                    android:id="@+id/c"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_below="@id/f"
+
+                    android:layout_alignParentStart="true"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="40dp"
+                    android:background="@drawable/maths" />
+                <Spinner
+                    android:id="@+id/spinner8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="60dp"
+                    android:dropDownVerticalOffset="50dp"
+                    android:layout_below="@+id/spinner7"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginTop="50dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_toRightOf="@+id/c"
+                    android:layout_marginEnd="21dp"
+                    android:background="@drawable/txtbtn"
+                    />
+
+
+                <ImageView
+                    android:id="@+id/s"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_below="@id/c"
+
+                    android:layout_alignParentStart="true"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="40dp"
+                    android:background="@drawable/interest" />
+
+                <Spinner
+                    android:id="@+id/spinner9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="60dp"
+                    android:dropDownVerticalOffset="50dp"
+                    android:layout_below="@+id/spinner8"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginTop="50dp"
+                    android:layout_marginEnd="21dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_toRightOf="@+id/s"
+                    android:background="@drawable/txtbtn"
+                    />
+
+
+            </RelativeLayout></ScrollView></RelativeLayout>
+
+</RelativeLayout>
